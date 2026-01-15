@@ -1,0 +1,24 @@
+# GitHub Pages configuration
+* text=auto
+
+# Source code
+*.js text
+*.jsx text
+*.ts text
+*.tsx text
+*.json text
+*.md text
+
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg text
+
+# Ensure consistent line endings
+*.js eol=lf
+*.jsx eol=lf
+*.json eol=lf
+*.md eol=lf
