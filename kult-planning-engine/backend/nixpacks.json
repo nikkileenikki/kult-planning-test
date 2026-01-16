@@ -1,8 +1,11 @@
 {
   "providers": ["node"],
-  "buildCommand": "npm install",
+  "buildCommand": "npm install --legacy-peer-deps",
   "startCommand": "node src/demo-server.js",
   "staticAssets": {
     "/*": "/"
+  },
+  "nixpkgs": {
+    "nodejs": "nodejs_20"
   }
 }
