@@ -1,1 +1,67 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KULT Planning Engine - Loading...</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+        h1 { font-size: 2.5em; margin-bottom: 20px; }
+        .status { font-size: 1.2em; margin: 20px 0; }
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            margin: 10px;
+        }
+        .button:hover { opacity: 0.9; }
+        .info { margin: 20px 0; opacity: 0.9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 KULT Planning Engine</h1>
+        <div class="status">⏳ GitHub Pages is deploying...</div>
+        <div class="info">
+            <p><strong>Deployment Status:</strong> In Progress</p>
+            <p><strong>Expected Time:</strong> 2-5 minutes</p>
+            <p><strong>Last Update:</strong> <span id="time"></span></p>
+        </div>
+        <div>
+            <a href="/kult-planning-engine/" class="button">Try App</a>
+            <a href="https://kult-planning-test-production.up.railway.app/" class="button">Backend API</a>
+        </div>
+        <div class="info" style="margin-top: 40px; font-size: 0.9em;">
+            <p>If the app link shows 404, wait a few minutes and refresh.</p>
+            <p>GitHub Pages typically takes 2-5 minutes to deploy updates.</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('time').textContent = new Date().toLocaleTimeString();
+        // Auto redirect after 30 seconds
+        setTimeout(() => {
+            window.location.href = '/kult-planning-engine/';
+        }, 30000);
+    </script>
+</body>
+</html>
